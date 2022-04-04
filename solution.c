@@ -35,7 +35,7 @@ int main(void)
 	float lat_mid = 33.545789;
 	float lng_mid = -98.4465375;
 
-
+	// Loop through data file
 	for (uint32_t x = 0; x < 2e6; ++x)
 	{
 		extraxtDataFile(x, &ID, &lat, &lng);
@@ -68,7 +68,7 @@ int main(void)
 				closest_vehicle.pos_ID[closest_vehicle.max_dist_index] = ID;
 				closest_vehicle.distance[closest_vehicle.max_dist_index] = distance;
 
-				// Determine vehicle furtheset away when a new value is placed in 
+				// Determine vehicle furtheset away after a new value is placed in 
 				findMaxDistance(&closest_vehicle);
 
 			} // End if
