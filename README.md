@@ -11,7 +11,7 @@ with the 10 given positions.
 The approach taken in my solution was to find a central position, roughly in the middle of all 10 positions and find the closest 100 
 vehicles to this central position. This method reduces the number of computations by comparing each vehicle's position to a single (central) position. Instead of comparing each vehicle's position to all 10 given positions.
 
-The middle point was found by calculating the center betwen the minimum and maximum lattitude. The same was done for the longitude. This provided the position for the middle point in my solution. 
+The middle point was found by calculating the center betwen the minimum and maximum lattitudes of all 10 positions. The same was done for the longitude. This provided the position for the middle point in my solution. 
 
 The C source code was written to follow the algorithm below:
 * Read binary data file and extract the Position ID, Latitude and Longitude for a single vehicle
